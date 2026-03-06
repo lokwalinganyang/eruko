@@ -1,0 +1,24 @@
+# Virtual Environment (Very important to ignore!)
+venv/
+env/
+ENV/
+
+# Local Database (You want Railway to use its own Postgres, not your local SQLite)
+*.sqlite3
+
+# Python Cache (Speeds up local runs, but not needed on GitHub)
+__pycache__/
+*.pyc
+
+# Media files (User uploads like member photos/PDFs)
+media/
+
+# Static files collected during deployment
+staticfiles/
+
+# Environment Variables (Where you hide your secret keys)
+.env
+
+# OS specific files
+.DS_Store
+Thumbs.db

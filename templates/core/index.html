@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hero shadow mb-5" style="background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb773b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
+    <div class="container py-5">
+        <h1 class="display-3 fw-bold text-white">Welcome to ERUKO SACCO</h1>
+        <p class="fs-4 text-white opacity-75 mb-4">Empowering the local community through unity and financial growth.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="/admin/" class="btn btn-warning btn-lg px-5 fw-bold text-dark shadow">Management Login</a>
+            <a href="/members/dashboard/" class="btn btn-outline-light btn-lg px-5">Member Portal</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row text-center mb-5 mt-n5">
+        <div class="col-md-4">
+            <div class="bg-white p-4 shadow-sm rounded-3 border-bottom border-warning border-4">
+                <h2 class="fw-bold text-primary">150+</h2>
+                <p class="text-muted mb-0">Active Members</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="bg-white p-4 shadow-sm rounded-3 border-bottom border-warning border-4">
+                <h2 class="fw-bold text-primary">KES 2M+</h2>
+                <p class="text-muted mb-0">Total Savings</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="bg-white p-4 shadow-sm rounded-3 border-bottom border-warning border-4">
+                <h2 class="fw-bold text-primary">24/7</h2>
+                <p class="text-muted mb-0">Online Access</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-4 text-center">
+            <div class="card h-100 shadow-sm border-0 card-balance p-4">
+                <div class="mb-3"><i class="fas fa-piggy-bank fa-3x" style="color: var(--eruko-gold);"></i></div>
+                <h3 class="fw-bold" style="color: var(--eruko-blue);">Secure Savings</h3>
+                <p class="text-muted">Track your KES balance in real-time with full transparency and security.</p>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card h-100 shadow-sm border-0 card-balance p-4">
+                <div class="mb-3"><i class="fas fa-hand-holding-usd fa-3x" style="color: var(--eruko-gold);"></i></div>
+                <h3 class="fw-bold" style="color: var(--eruko-blue);">Easy Loans</h3>
+                <p class="text-muted">Apply for credit with affordable interest rates tailored for our members.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary mt-2">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card h-100 shadow-sm border-0 card-balance p-4">
+                <div class="mb-3"><i class="fas fa-file-pdf fa-3x" style="color: var(--eruko-gold);"></i></div>
+                <h3 class="fw-bold" style="color: var(--eruko-blue);">Resources</h3>
+                <p class="text-muted">Download application forms, SACCO bylaws, and financial reports instantly.</p>
+                <a href="#" class="btn btn-sm btn-outline-primary mt-2">View Files</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-primary text-white p-4 rounded-3 shadow-sm d-flex justify-content-between align-items-center">
+        <div>
+            <h4 class="mb-1 fw-bold">Next General Meeting</h4>
+            <p class="mb-0 opacity-75">Join us on March 25th at Lodwar Town Hall.</p>
+        </div>
+        <button class="btn btn-light fw-bold">RSVP Now</button>
+    </div>
+</div>
+{% endblock %}
