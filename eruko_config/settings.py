@@ -8,7 +8,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-eruko-sacco-key-2026'
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 ALLOWED_HOSTS = ['.railway.app', 'localhost', '127.0.0.1']
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://eruko-production.up.railway.app',
+    'https://*.railway.app'  # This covers any changes to your Railway URL
+]
 # 2. Installed Apps (Fixes " [ was not closed")
 INSTALLED_APPS = [
     'django.contrib.admin',

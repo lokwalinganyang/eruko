@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn eruko_config.wsgi
+web: gunicorn eruko_config.wsgi
